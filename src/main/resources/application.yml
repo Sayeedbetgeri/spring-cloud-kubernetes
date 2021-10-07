@@ -1,0 +1,13 @@
+server.port: 8888
+
+spring:
+  application:
+    name: cloud-k8s-app
+  cloud:
+    kubernetes:
+      config:
+        name: default
+        namespace: default
+        sources:
+          # Spring Cloud Kubernetes will lookup a ConfigMap named c1 in namespace default-namespace
+          - name: c1
