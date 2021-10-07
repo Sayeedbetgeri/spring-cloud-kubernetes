@@ -6,8 +6,8 @@ spring:
   cloud:
     kubernetes:
       config:
-        name: default
-        namespace: default
+        name: betgeris-dev
+        namespace: betgeris-dev
         sources:
           # Spring Cloud Kubernetes will lookup a ConfigMap named c1 in namespace default-namespace
           - name: c1
