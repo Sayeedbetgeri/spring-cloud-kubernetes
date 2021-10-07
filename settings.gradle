@@ -1,3 +1,2 @@
-pluginManagement{  repositories{  maven{  url 'https://artifacts.aimspecialtyhealth.com/artifactory/gradle-dev'  }  } }
 
 rootProject.name = 'centralized-configuration-service'
