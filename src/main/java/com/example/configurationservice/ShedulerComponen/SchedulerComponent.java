@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class SchedulerComponent {
 
 
-    @Value("${message}")
+    @Value("${message:Welcome to Kubernetes}")
     private String message;
 
     @Scheduled(fixedDelay = 3000)
