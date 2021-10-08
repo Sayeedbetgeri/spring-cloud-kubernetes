@@ -11,7 +11,6 @@ sourceCompatibility = '1.8'
 repositories {
 	mavenCentral()
 	maven { url 'https://repo.spring.io/milestone' }
-
 }
 
 ext {
@@ -21,9 +20,11 @@ ext {
 dependencies {
 	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-kubernetes
 	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-kubernetes-all
-	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-kubernetes-all', version: '1.1.10.RELEASE'
+	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-kubernetes-config', version: '1.1.10.RELEASE'
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.5.2'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.5.2'
+
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
