@@ -2,6 +2,7 @@ server.port: 8080
 
 logging.level.org.springframework.cloud.kubernetes: DEBUG
 spring.application.name: client-service
+spring.profiles.active: dev
 
 management:
   endpoints:
