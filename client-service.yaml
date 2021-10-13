@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: client-service
 data:
-  application.properties: |-
+  application-dev.properties: |-
     bean.message=Testing reload ! Message from backend is: %s <br/> Services : %s
     message=I am scheduler
